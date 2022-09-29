@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  text-align: left;
+  width: 90%;
+  padding: 2%;
 }
 
 .App-logo {
@@ -35,4 +37,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+textarea {
+  width: 80%;
 }

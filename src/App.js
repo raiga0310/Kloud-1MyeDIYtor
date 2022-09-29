@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import { Header } from "./components/Header";
+import {EditField} from "./components/EditField";
+import {Grid} from "@mui/material";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Grid container spacing={4} direction={"column"}>
+            <Grid><Header /></Grid>
+            <Grid><EditField/></Grid>
+        </Grid>
     </div>
   );
 }
